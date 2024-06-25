@@ -1,0 +1,23 @@
+{
+  "name": "Text 2 Speech API",
+  "version": "1.0.0",
+  "description": "A simple API to convert text to speech using AWS Polly",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-polly": "^3.600.0",
+    "@aws-sdk/polly-request-presigner": "^3.600.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
