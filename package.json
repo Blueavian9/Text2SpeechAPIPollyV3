@@ -1,5 +1,5 @@
 {
-  "name": "Text2SpeechAPIPollyV3",
+  "name": "Text 2 Speech API",
   "version": "1.0.0",
   "description": "A simple API to convert text to speech using AWS Polly",
   "main": "index.js",
