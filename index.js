@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const client = new Polly({
   region: process.env.AWS_REGION,
-  accessKeyId: process.env.AWS_KEY,
-  secretAccessKey: process.env.AWS_SECRET_KEY
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 });
 
 /**
@@ -23,6 +23,7 @@ const client = new Polly({
 * @returns {Promise<string>} The URL of the synthesized speech
 * @throws {Error} If speech URL generation fails
 */
+
 const speakText = async (voice, text) => {
   const speechParams = {
     OutputFormat: "mp3",

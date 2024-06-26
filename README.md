@@ -26,10 +26,14 @@ This Express.js server provides an API endpoint for text-to-speech synthesis usi
 ### `speakText(voice, text)`
 
 This asynchronous function generates a speech URL using AWS Polly:
-- Takes `voice` (Voice ID) and `text` as parameters
-- Sets up speech parameters including output format (mp3) and text type
-- Uses `getSynthesizeSpeechUrl` to generate a pre-signed URL for the synthesized speech
-- Returns the generated URL or throws an error if the process fails
+
+1. Takes `voice` (Voice ID) and `text` as parameters.
+
+2. Sets up speech parameters including output format (mp3) and text type.
+
+3. Uses `getSynthesizeSpeechUrl` to generate a pre-signed URL for the synthesized speech.
+
+4. Returns the generated URL or throws an error if the process fails.
 
 ### API Endpoint: POST `/api/synthesize`
 
@@ -39,5 +43,5 @@ This asynchronous function generates a speech URL using AWS Polly:
 
 ## Server Initialization
 
-- The server listens on the port specified in the environment variable PORT, or defaults to 3333
-- Logs a message when the server starts successfully
+1. - The server listens on the port specified in the environment variable PORT, or defaults to 3333 *
+2. - Logs a message when the server starts successfully  
